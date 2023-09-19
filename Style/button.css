@@ -1,0 +1,45 @@
+button {
+  border-style: none;
+  height: 40px;
+  padding: 6px 12px;
+  background-color: var(--principal);
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.6s ease;
+}
+
+/*Botões da página principal*/
+.button-register {
+  width: 200px;
+  border-radius: 10px;
+}
+
+/*Botões da página de registros*/
+.button-box {
+  width: 100px;
+  border-radius: 10px;
+}
+.button-save {
+  background-color: var(--alternativa3);
+}
+.button-cancel {
+  background-color: var(--alternativa2);
+}
+
+.img-button {
+  max-width: 30px;
+  padding: 2px;
+}
+
+.img-button:hover {
+  transform: scale(1.3);
+  transition: 1s all ease;
+}
+/*hover*/
+.button-register:hover {
+  background-color: var(--alternativa3);
+}
+.button-box:hover {
+  background-color: var(--principal);
+}

@@ -1,0 +1,101 @@
+.register-box {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #00000090;
+    opacity: 0;
+    z-index: -1;
+    transition: all 0.5s;
+}
+
+.register-box.active{
+    opacity: 1;
+    z-index: 1;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 50%;
+  margin: 15vh auto;
+  padding-bottom: 20px;
+  background-color: var(--padrao);
+  box-shadow: 1px 1px 10px black;
+}
+
+.register-header {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  background-color: var(--principal);
+  color: var(--padrao);
+  height: 40px;
+  line-height: 40px;
+  font-size: 16px;
+}
+
+.close {
+  position: absolute;
+  right: 0;
+  display: block;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  user-select: none;
+  cursor: pointer;
+}
+
+.close:hover {
+  background-color: var(--alternativa2);
+  color: var(--padrao);
+}
+
+.form-box {
+    background: #fff;
+    max-width: 100%;
+    height: auto;
+    padding: 0px 20px;
+    border-radius: 20px;
+}
+
+.box-input{
+    position: relative;
+    margin: 10px 0;
+}
+
+.box-input label{
+    position: absolute;
+    left: 0;
+    bottom: 2px;
+    cursor: text;
+    transition: all 0.5s;
+    color: #808080;
+    pointer-events: none;
+    font-size: 14px;
+}
+.box-input input{
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid #808080;
+    outline: none;
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+.box-input input:focus{
+    border-bottom: 2px solid var(--principal);
+}
+
+.box-input input:focus ~ label{
+    transform: translateY(-20px);
+    font-size: 12px;
+    color: var(--principal);
+}
+
+.box-button {
+  background-color: inherit;
+  text-align: right;
+  padding: 0 20px;
+}

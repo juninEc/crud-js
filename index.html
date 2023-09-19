@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EJ Serviços</title>
+    <link rel="stylesheet" href="Style/home.css" />
+    <link rel="stylesheet" href="Style/button.css" />
+    <link rel="stylesheet" href="Style/register.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="box-header"><p>EJ Serviços</p></header>
+    <section class="box-information">
+      <h1>Cadastro de Servidores</h1>
+      <p>
+        Local responsável pelo cadastro dos nossos colaboradores, que contém
+        informações cruciais para o controle da empresa.
+      </p>
+    </section>
+    <main>
+      <button type="button" class="button button-register" id="button-register">
+        Cadastrar Servidor
+      </button>
+      <table id="tableRegister" class="box-table">
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>CPF</th>
+            <th>Telefone</th>
+            <th>Email</th>
+            <th>Evento</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </main>
+    <div class="register-box" id="register-box">
+      <div class="box">
+        <header class="register-header">
+          <p>Cadastrar novo servidor</p>
+          <span class="close" id="close">&#10006;</span>
+        </header>
+        <form id="form" class="form-box">
+          <div class="box-input">
+            <input
+              id="nome"
+              class="box-field"
+              data-index="new"
+              type="text"
+              required
+            />
+            <label for="nome">Nome: </label>
+          </div>
+          <div class="box-input">
+            <input
+              class="box-field"
+              type="text"
+              id="cpf"
+              pattern="\d{11}"
+              maxlength="11"
+              required
+            />
+            <label for="cpf">CPF:</label>
+          </div>
+          <div class="box-input">
+            <input
+              class="box-field"
+              type="text"
+              id="telefone"
+              pattern="\d{11}"
+              maxlength="11"
+              required
+            />
+            <label for="telefone">Telefone:</label>
+          </div>
+          <div class="box-input">
+            <input class="box-field" type="email" id="email" required />
+            <label for="email">Email:</label>
+          </div>
+        </form>
+        <div class="box-button">
+          <button type="button" class="button button-save button-box" id="save">
+            Salvar
+          </button>
+          <button
+            type="button"
+            class="button button-cancel button-box"
+            id="cancel"
+          >
+            Cancelar
+          </button>
+        </div>
+      </div>
+    </div>
+    <footer>Copyright &copy; Eduardo Júnior</footer>
+    <script src="script.js"></script>
+  </body>
+</html>
